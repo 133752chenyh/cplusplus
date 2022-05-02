@@ -9,6 +9,8 @@ std::tuple<std::string, int> createPerson() {
 
 int main() {
 
+	std::string name;
+	int age;
 	std::tie(name, age) = createPerson();
 	std::cout << name << ": " << age << std::endl;
 
