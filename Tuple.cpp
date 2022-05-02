@@ -9,7 +9,7 @@ std::tuple<std::string, int> createPerson() {
 
 int main() {
 
-	auto [name, age] = createPerson();
+	std::tie(name, age) = createPerson();
 	std::cout << name << ": " << age << std::endl;
 
 	return 0;
